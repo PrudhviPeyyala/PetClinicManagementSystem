@@ -1,0 +1,21 @@
+<p>:::::::::::::::: Employees List :::::::::::::::</p>
+<div class="card my-5">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <th scope="col">Id</th>
+                <th scope="col">Employee First Name</th>
+                <th scope="col">Employee Last Name</th>
+                <th scope="col">Address</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{employee.id}}</td>
+                    <td>{{employee.emp_First_name}}</td>
+                    <td>{{employee.emp_last_name}}</td>
+                    <td>{{employee.address}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
